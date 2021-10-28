@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+/***** Global *****/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Merriweather', serif;
+}
+
+body {
+  background: seashell;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+hr {
+  margin: 25px 0px;
+  border: 1px dashed;
+}
+
+/***** App.js *****/
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+/***** QuoteCard.js *****/
+
+.quote-card {
+  background: white;
+  width: 600px;
+  padding: 50px;
+  margin: 50px;
+  border-radius: 4px;
+  animation: fadeInAnimation ease 2s;
+  animation-fill-mode: forwards;
+}
+
+.quote-content {
+  margin-bottom: 8px;
+  text-align: center;
+  letter-spacing: 2px;
+  line-height: 1.6;
+  word-spacing: 2px;
+  font-size: 16px;
+}
+
+.quote-author {
+  font-size: 10px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.quote-symbol {
+  font-size: 50px;
+  text-align: center;
+}
+
+.flexbox-buttons {
+  display: flex;
+  flex-direction: row;
+  width: auto;
+}
+
+/***** Button.js *****/
+
+.button {
+  padding: 12px;
+  box-shadow: 5px 5px rgba(0,0,0,0.2);
+  border: none;
+  text-shadow: 0px 0px 0px transparent;
+  border-radius: 4px;
+}
+
+.button a {
+  text-decoration: none;
+  color: black;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:active {
+  cursor: loading;
+  transform: translateY(4px);
+  box-shadow: 0px 0px transparent;
+}
+
+.flexbox-right {
+  margin-left: auto;
+}
+
+.media {
+  width: 40px;
+  margin-right: 10px;
+}
+
+/***** Animations *****/
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+   }
+}
