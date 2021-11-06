@@ -10,7 +10,7 @@
 }
 
 body {
-  background: seashell;
+  background: white;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -21,8 +21,8 @@ body {
 }
 
 hr {
-  margin: 25px 0px;
   border: 1px dashed;
+  margin: 25px 0px;
 }
 
 /***** App.js *****/
@@ -38,16 +38,14 @@ hr {
 
 .quote-card {
   background: white;
-  width: 600px;
-  padding: 50px;
-  margin: 50px;
+  width: 500px;
+  padding: 4em;
   border-radius: 4px;
-  animation: fadeInAnimation ease 2s;
+  animation: fadeInAnimation ease-in 1s;
   animation-fill-mode: forwards;
 }
 
 .quote-content {
-  margin-bottom: 8px;
   text-align: center;
   letter-spacing: 2px;
   line-height: 1.6;
@@ -59,10 +57,12 @@ hr {
   font-size: 10px;
   text-align: center;
   letter-spacing: 1px;
+  font-style: italic;
+  margin-top: 25px;
 }
 
 .quote-symbol {
-  font-size: 50px;
+  font-size: 25px;
   text-align: center;
 }
 
@@ -70,14 +70,15 @@ hr {
   display: flex;
   flex-direction: row;
   width: auto;
+  margin-top: 25px;
 }
 
 /***** Button.js *****/
 
 .button {
   padding: 12px;
-  box-shadow: 5px 5px rgba(0,0,0,0.2);
-  border: none;
+  box-shadow: 0px 5px rgba(0,0,0,0.8);
+  border: 1px solid rgba(0,0,0,0.8);
   text-shadow: 0px 0px 0px transparent;
   border-radius: 4px;
 }
@@ -115,4 +116,13 @@ hr {
   100% {
       opacity: 1;
    }
+}
+
+/**** Media *****/
+
+@media (max-width: 650px) {
+  .quote-card {
+    width: 100vw;
+    background: none;
+  }
 }
