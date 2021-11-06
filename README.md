@@ -1,8 +1,5 @@
 # Random Quote Generator
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/c09476a3-c46d-4bff-a280-70e5b5b114e7/deploy-status)](https://app.netlify.com/sites/ajoyful-random-quote-generator/deploys)
-
-## About
 An aesthetically-pleasing quote generator.
 
 ## Features
@@ -11,6 +8,8 @@ An aesthetically-pleasing quote generator.
 - [x] Generate new quote button
 
 ## Deployment
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/c09476a3-c46d-4bff-a280-70e5b5b114e7/deploy-status)](https://app.netlify.com/sites/ajoyful-random-quote-generator/deploys)
 
 Check out the website [here](https://ajoyful-random-quote-generator.netlify.app/)!
 
