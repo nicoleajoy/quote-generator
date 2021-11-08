@@ -9,9 +9,9 @@ An aesthetically-pleasing quote generator.
 
 ## Deployment
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/b477eb7e-7675-47b4-9fa9-5bd5f9e2d448/deploy-status)](https://app.netlify.com/sites/ajoyful-random-quote-generator/deploys)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/b477eb7e-7675-47b4-9fa9-5bd5f9e2d448/deploy-status)](https://ajoyful-quote-generator.netlify.app)
 
-Check out the website [here](https://ajoyful-random-quote-generator.netlify.app/)!
+Check out the website [here](https://ajoyful-quote-generator.netlify.app)!
 
 ## Credit
 
