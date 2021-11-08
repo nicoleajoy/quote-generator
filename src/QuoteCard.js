@@ -1,4 +1,6 @@
 import React from "react"
+import { FaQuoteLeft, FaQuoteRight } from "react-icons/fa"
+import { BsDashLg } from "react-icons/bs"
 
 const QuoteCard = ({ content, author, color, handleClick }) => {
   const tweet = `https://twitter.com/intent/tweet?text="${content}" ${author}`
@@ -6,10 +8,14 @@ const QuoteCard = ({ content, author, color, handleClick }) => {
   return (
     <div className="quote-card">
       <hr />
-      <div className="quote-symbol">🙶</div>
-      <div className="quote-content">{content}</div>
-      <div className="quote-symbol">🙸</div>
-      <div className="quote-author">— {author}</div>
+      <div className="quote-content">
+        <FaQuoteLeft className="quote-symbol" />
+        {content}
+        <FaQuoteRight className="quote-symbol" />
+      </div>
+      <div className="quote-author">
+        <BsDashLg /> {author}
+      </div>
       <hr />
 
       <div className="flexbox-buttons">

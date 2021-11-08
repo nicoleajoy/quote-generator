@@ -21,8 +21,11 @@ body {
 }
 
 hr {
-  border: 1px dashed;
-  margin: 25px 0px;
+  border: 1px dashed rgb(28, 28, 28);
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
 }
 
 /***** App.js *****/
@@ -38,7 +41,7 @@ hr {
 
 .quote-card {
   background: white;
-  width: 500px;
+  width: 650px;
   padding: 4em;
   border-radius: 4px;
   animation: fadeInAnimation ease-in 1s;
@@ -46,24 +49,23 @@ hr {
 }
 
 .quote-content {
-  text-align: center;
-  letter-spacing: 2px;
-  line-height: 1.6;
-  word-spacing: 2px;
-  font-size: 16px;
-}
-
-.quote-author {
-  font-size: 10px;
-  text-align: center;
+  text-align: left;
   letter-spacing: 1px;
-  font-style: italic;
+  line-height: 1.5;
+  font-size: 16px;
   margin-top: 25px;
 }
 
+.quote-author {
+  font-size: 12px;
+  text-align: right;;
+  font-style: italic;
+  margin-top: 10px;
+  margin-bottom: 25px;
+}
+
 .quote-symbol {
-  font-size: 25px;
-  text-align: center;
+  margin: 0px 10px;
 }
 
 .flexbox-buttons {
@@ -77,15 +79,14 @@ hr {
 
 .button {
   padding: 12px;
-  box-shadow: 0px 5px rgba(0,0,0,0.8);
-  border: 1px solid rgba(0,0,0,0.8);
+  box-shadow: 0px 5px rgba(28,28,28,0.8);
+  border: 1px solid rgba(28,28,28,0.8);
   text-shadow: 0px 0px 0px transparent;
   border-radius: 4px;
 }
 
 .button a {
   text-decoration: none;
-  color: black;
 }
 
 .button:hover {
@@ -94,7 +95,7 @@ hr {
 
 .button:active {
   cursor: loading;
-  transform: translateY(4px);
+  transform: translateY(6px);
   box-shadow: 0px 0px transparent;
 }
 
@@ -120,9 +121,10 @@ hr {
 
 /**** Media *****/
 
-@media (max-width: 650px) {
+@media (max-width: 750px) {
   .quote-card {
     width: 100vw;
+    padding: 4em;
     background: none;
   }
 }

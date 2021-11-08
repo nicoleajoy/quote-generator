@@ -38,16 +38,16 @@ const App = () => {
       "hsl(" +
       360 * Math.random() +
       "," +
-      (1 + 25 * Math.random()) +
+      (25 + 25 * Math.random()) +
       "%," +
-      (85 + 10 * Math.random()) +
+      (80 + 10 * Math.random()) +
       "%)"
   }
 
   return (
     <div className="app">
       {isLoading ? (
-        "Generating new quote..."
+        "Generating quote..."
       ) : (
         <QuoteCard
           content={content}
